@@ -7,16 +7,38 @@ html, body
 
 header
 {
-    height: 8vh;
     width: 100vw;
-    background-color: green;
+    background-color: dimgrey;
 }
 
+.navbar
+{
+/*    height: 8vh;*/
+    position: fixed;
+    width: 100vw;
+    border-bottom: 1px solid darkgoldenrod;
+    background-color: #F8F9FA!important;
+    font-size: 150%;
+}
+
+#navbarNav 
+{
+    background-color: #F8F9FA;
+    background-position: center;
+    height: auto;
+    width: 100vw;
+    margin-left: -5%;
+    margin-right: -5%;
+    margin-top: 1.5vh;
+}
+
+/*57 PIXELS DE PADDING-TOP POUR COMPENSER LA HAUTEUR EXACTE DE LA NAVBAR, QUI SINON COUVRAIT UNE PARTIE DE LA BANNIERE*/
 .banniere
 {
     background: url(img/mountain.jpg) no-repeat center;
     width: 100vw;
-    height: 40vh;
+    height: 87vh;
+    padding-top: 57px;
 }
 
 h2
@@ -36,7 +58,8 @@ h2
 
 #colonne1, #colonne2, #colonne3, #colonne4, #colonne5, #colonne6, #colonne7, #colonne8, #colonne9, #colonne10, #colonne11, #colonne12
 {
-    background-color: aqua;
+/*    background-color: aqua;*/
+    border: darkgoldenrod solid 1px;
     margin-top: 5vh;
     margin-left: 5vw;
     margin-right: 5vw;

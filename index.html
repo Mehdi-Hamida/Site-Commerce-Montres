@@ -12,12 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 
-        <script type="text/javascript" src="particules.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!--    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--Minifier le CSS à la fin!-->
@@ -47,11 +43,35 @@
     <meta name="twitter:image:alt" content="Illustration de création de site web">
     <meta name="twitter:url" content="https://mehdi-hamida.github.io/Projet-4-Optimisez-un-site-web-existant/" />
 </head>
-    
+
 <body>
-    <header></header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#accueil">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
+                <!--                CI-DESSOUS ML-AUTO ET FLEX-NOWRAP SERVENT A ALIGNER LES CATEGORIES A DROITE DANS LA NAVBAR-->
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <main>
-        <div class="banniere">bannière graphique avec logo typographique</div>
+        <section id="accueil">
+            <div class="banniere">bannière graphique avec logo typographique</div>
+        </section>
         <h2>Collection Casual</h2>
         <div class="row">
             <div id="colonne1" class="col-xs-1 col-md-5 col-lg-5">
@@ -67,7 +87,7 @@
                 colonne 4
             </div>
         </div>
-                <h2>Collection Prestige</h2>
+        <h2>Collection Prestige</h2>
         <div class="row">
             <div id="colonne5" class="col-xs-1 col-md-5 col-lg-5">
                 colonne 5
@@ -82,7 +102,7 @@
                 colonne 8
             </div>
         </div>
-                <h2>Collection High-Tech</h2>
+        <h2>Collection High-Tech</h2>
         <div class="row">
             <div id="colonne9" class="col-xs-1 col-md-5 col-lg-5">
                 colonne 9
@@ -99,4 +119,7 @@
         </div>
     </main>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
