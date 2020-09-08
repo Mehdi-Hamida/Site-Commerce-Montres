@@ -15,9 +15,10 @@ header
 {
 /*    height: 8vh;*/
     position: fixed;
+    z-index: 1;
     width: 100vw;
     border-bottom: 1px solid darkgoldenrod;
-    background-color: #F8F9FA!important;
+    background-color: #F8F9FA;
     font-size: 150%;
 }
 
@@ -36,8 +37,9 @@ header
 .banniere
 {
     background: url(img/mountain.jpg) no-repeat center;
+    background-size: cover;
     width: 100vw;
-    height: 87vh;
+    height: 80vh;
     padding-top: 57px;
 }
 
@@ -45,7 +47,13 @@ h2
 {
     font-size: 3vh;
     margin-top: 5vh;
+    margin-bottom: 6vh;
     text-align: center;
+}
+
+#collection_casual, #collection_prestige, #collection_high_tech
+{
+    padding-top: 7vh;
 }
 
 /* MARGIN : 0 SUR .ROW DESACTIVE LES MARGES PAR DEFAUT DE BOOTSTRAP QUI EMPECHENT LE CONTENU DE REMPLIR L'ECRAN*/
@@ -71,5 +79,17 @@ h2
     {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .separateurs
+    {
+    border-top: 1px solid darkgoldenrod;
+    width: 20vw;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     }
 }
