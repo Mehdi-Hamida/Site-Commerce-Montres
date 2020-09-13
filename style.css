@@ -20,6 +20,11 @@ header
     border-bottom: 1px solid darkgoldenrod;
     background-color: #F8F9FA;
     font-size: 150%;
+    margin-top: -57px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.5%;
+    padding-right: 2%;
 }
 
 #navbarNav 
@@ -33,14 +38,34 @@ header
     margin-top: 1.5vh;
 }
 
+/*
+#logo
+{
+    position: absolute;
+    width: 3rem;
+    margin-top: -1.5rem;
+}
+*/
+
 /*57 PIXELS DE PADDING-TOP POUR COMPENSER LA HAUTEUR EXACTE DE LA NAVBAR, QUI SINON COUVRAIT UNE PARTIE DE LA BANNIERE*/
 .banniere
 {
-    background: url(img/mountain.jpg) no-repeat center;
+    background: url(img/banniere4.PNG) no-repeat center;
     background-size: cover;
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     padding-top: 57px;
+    margin-top: 57px;
+}
+
+/*POUR PAS QUE LE NOM DE MARQUE SOIT FLOU SUR PC*/
+@media (min-width: 1025px)
+{
+    .banniere
+    {
+        background: url(img/bannierepc.PNG) no-repeat center;
+        background-size: cover;
+    }
 }
 
 h2
