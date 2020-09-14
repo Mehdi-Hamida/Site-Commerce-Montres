@@ -27,6 +27,11 @@ header
     padding-right: 2%;
 }
 
+.navbar-brand
+{
+    z-index: 1;
+}
+
 #navbarNav 
 {
     background-color: #F8F9FA;
@@ -37,15 +42,6 @@ header
     margin-right: -5%;
     margin-top: 1.5vh;
 }
-
-/*
-#logo
-{
-    position: absolute;
-    width: 3rem;
-    margin-top: -1.5rem;
-}
-*/
 
 /*57 PIXELS DE PADDING-TOP POUR COMPENSER LA HAUTEUR EXACTE DE LA NAVBAR, QUI SINON COUVRAIT UNE PARTIE DE LA BANNIERE*/
 .banniere
@@ -68,12 +64,27 @@ header
     }
 }
 
+@font-face
+{
+    font-family: 'pinyonscript';
+    src: url('pinyonscript.ttf');
+}
+
 h2
 {
-    font-size: 3vh;
+/*    font-family: 'pinyonscript';*/
+    font-family: 'Italianno', cursive;
+/*    font-weight: 600;*/
+    font-size: 3rem;
     margin-top: 5vh;
     margin-bottom: 6vh;
     text-align: center;
+    width: 100vw;
+/*    background-color: #f0f0f0;*/
+    border-bottom: solid darkgoldenrod 1px;
+    border-top: solid darkgoldenrod 1px;
+    padding-top: 0.5rem;
+/*    padding-bottom: 0.1rem;*/
 }
 
 #collection_casual, #collection_prestige, #collection_high_tech
