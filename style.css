@@ -47,9 +47,9 @@ header
 .banniere
 {
     background: url(img/banniere4.PNG) no-repeat center;
-    background-size: cover;
+    background-size: 200%;
     width: 100vw;
-    height: 60vh;
+    height: 50vh;
     padding-top: 57px;
     margin-top: 57px;
 }
@@ -80,10 +80,11 @@ h2
     margin-bottom: 6vh;
     text-align: center;
     width: 100vw;
-/*    background-color: #f0f0f0;*/
+/*    background-color: #F8F9FA;*/
     border-bottom: solid darkgoldenrod 1px;
     border-top: solid darkgoldenrod 1px;
     padding-top: 0.5rem;
+/*    color: darkgoldenrod;*/
 /*    padding-bottom: 0.1rem;*/
 }
 
@@ -96,17 +97,27 @@ h2
 .row
 {
     margin: 0;
-    height: 100vh;
+/*    height: 100vh;*/
     justify-content: space-around;
 }
 
-#colonne1, #colonne2, #colonne3, #colonne4, #colonne5, #colonne6, #colonne7, #colonne8, #colonne9, #colonne10, #colonne11, #colonne12
+.colonne
 {
-/*    background-color: aqua;*/
+/*
+    background-image: url(img/ap.jpg) ;
+    background-size: contain;
+*/
+    display: flex;
+    justify-content: center;
     border: darkgoldenrod solid 1px;
     margin-top: 5vh;
     margin-left: 5vw;
     margin-right: 5vw;
+}
+
+.ap
+{
+    width: 70%;
 }
 
 @media (min-width: 768px)
